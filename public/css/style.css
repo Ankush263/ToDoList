@@ -1,6 +1,7 @@
 html {
   background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  /* background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%); */
+  background-image: -webkit-linear-gradient(65deg, #070707 50%, orange 50%);
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
@@ -19,7 +20,8 @@ h1 {
 }
 
 #heading {
-  background-color: #A683E3;
+  /* background-color: #A683E3; */
+  background-color: rgb(14, 12, 10);
   text-align: center;
 }
 
@@ -36,7 +38,8 @@ h1 {
 
 input:checked+p {
   text-decoration: line-through;
-  text-decoration-color: #A683E3;
+  /* text-decoration-color: #A683E3; */
+  text-decoration-color: orange;
 }
 
 input[type="checkbox"] {
@@ -61,7 +64,8 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #A683E3;
+  /* background-color: #A683E3; */
+  background-color: orange;
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
