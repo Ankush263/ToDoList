@@ -22,5 +22,3 @@ exports.getDay = function() {
 
   return today.toLocaleDateString('en-US', options)
 }
-
-console.log(module.exports)
