@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
   let day = date.getDate()
 
-  res.render("list", {ListTitle: day, newListItems: items})
+  res.render("index", {ListTitle: day, newListItems: items})
 
 })
 
@@ -39,7 +39,7 @@ app.post('/', (req, res) => {
 })
 
 app.get('/work', (req, res) => {
-  res.render('list', {ListTitle: "Work List", newListItems: workItems})
+  res.render('index', {ListTitle: "Work List", newListItems: workItems})
 })
 
 app.post('/work', (req, res) => {
