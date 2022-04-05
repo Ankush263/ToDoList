@@ -20,9 +20,21 @@ const itemsSchema = {
 
 const Item = mongoose.model('Item', itemsSchema)
 
+const item1 = new Item({
+  name: "Chicken"
+})
+
+const item2 = new Item({
+  name: "Paneer"
+})
+
+const Item3 = new Item({
+  name: "Milk"
+})
+
 app.get('/', (req, res) => {
 
-  res.render("index", {ListTitle: day, newListItems: items})
+  res.render("index", {ListTitle: "Today", newListItems: items})
 
 })
 
