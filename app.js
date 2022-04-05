@@ -3,7 +3,6 @@ const app = express()
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const port = 3000
-const date = require(__dirname + "/date.js")
 
 
 
@@ -22,9 +21,6 @@ const itemsSchema = {
 const Item = mongoose.model('Item', itemsSchema)
 
 app.get('/', (req, res) => {
-  
-
-  let day = date.getDate()
 
   res.render("index", {ListTitle: day, newListItems: items})
 
