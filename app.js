@@ -4,8 +4,7 @@ const bodyParser = require('body-parser')
 const port = 3000
 const date = require(__dirname + "/date.js")
 
-const items = ["Buy food", "Cook food", "Eat food"]
-const workItems = []
+
 
 app.use(bodyParser.urlencoded({extended: true}))
 
