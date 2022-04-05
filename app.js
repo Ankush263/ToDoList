@@ -15,6 +15,12 @@ app.set('view engine', 'ejs')
 
 mongoose.connect("mongodb://localhost:27017/todolistDB")
 
+const itemsSchema = {
+  name: String
+}
+
+const Item = mongoose.model('Item', itemsSchema)
+
 app.get('/', (req, res) => {
   
 
