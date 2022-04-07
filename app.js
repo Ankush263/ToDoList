@@ -83,9 +83,7 @@ app.post('/delete', (req, res) => {
   })
 })
 
-app.get('/work', (req, res) => {
-  res.render('index', {ListTitle: "Work List", newListItems: workItems})
-})
+
 
 app.post('/work', (req, res) => {
   let item = req.body.newItem
