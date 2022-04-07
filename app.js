@@ -90,6 +90,13 @@ app.post('/delete', (req, res) => {
 
 app.get('/:customListName', (req, res) => {
   const customListName = req.params.customListName
+
+  const list = new List({
+    name: customListName,
+    items: defaultItems
+  })
+
+  list.save()
 })
 
 app.post('/work', (req, res) => {
