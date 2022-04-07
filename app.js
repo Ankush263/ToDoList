@@ -101,7 +101,7 @@ app.get('/:customListName', (req, res) => {
         })
         
         list.save()
-        res.redirect('/')
+        res.redirect('/' + customListName)
       }
       else {
         res.render("index", {ListTitle: foundList.name, newListItems: foundList.items})
