@@ -83,7 +83,9 @@ app.post('/delete', (req, res) => {
   })
 })
 
-
+app.get('/:customListName', (req, res) => {
+  const customListName = req.params.customListName
+})
 
 app.post('/work', (req, res) => {
   let item = req.body.newItem
