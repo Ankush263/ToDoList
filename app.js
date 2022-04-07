@@ -34,7 +34,12 @@ const item3 = new Item({
 
 const defaultItems = [item1, item2, item3]
 
+const ListSchema = {
+  name: String,
+  items: [itemsSchema]
+}
 
+const List = mongoose.model("List", ListSchema)
 
 app.get('/', (req, res) => {
 
