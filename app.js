@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const port = 3000
-
+const _ = require('lodash')
 
 
 app.use(bodyParser.urlencoded({extended: true}))
@@ -110,7 +110,7 @@ app.post('/delete', (req, res) => {
 })
 
 app.get('/:customListName', (req, res) => {
-  const customListName = req.params.customListName
+  const customListName = _.capitalize(req.params.customListName)
 
   List.findOne({name: customListName}, (err, foundList) => {
     if(!err) {
