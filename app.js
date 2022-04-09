@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-const port = 3000
 const _ = require('lodash')
 
 
@@ -142,6 +141,12 @@ app.post('/work', (req, res) => {
 app.get('/about', (req, res) => {
   res.render('about')
 })
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port);
 
 app.listen(port, () => {
   console.log("You are listening to the port 3000")
