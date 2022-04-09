@@ -12,7 +12,7 @@ app.use(express.static("public"))
 
 app.set('view engine', 'ejs')
 
-mongoose.connect("mongodb+srv://Ankush1234:Ankush1234@cluster0.3c3fb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority/todolistDB")
+mongoose.connect("mongodb+srv://Ankush1234:Ankush1234@cluster0.3c3fb.mongodb.net/todolistDB")
 
 const itemsSchema = {
   name: String
